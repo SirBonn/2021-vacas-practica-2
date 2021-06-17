@@ -3,6 +3,7 @@ package src.clientes;
 /**
  * Cliente
  */
+
 public class Cliente {
     private int id;
     private String nombre;
@@ -45,7 +46,7 @@ public class Cliente {
     //fin getters y setters
 
     public String getInformacion(){
-        String resultado = "Id: "+id+" Nombre del cliente: " + nombre;
+        String resultado = "Nombre: " + nombre +" Id: " +id;
         return resultado;
     }
     

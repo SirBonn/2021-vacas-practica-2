@@ -16,7 +16,7 @@ public class VectorClientes {
             System.out.println("Límite de clientes alcanzado");
         }
         else{
-            clientes[(siguienteCodigo-1)] = new Cliente(siguienteCodigo, nombre, telefono);
+            clientes[(siguienteCodigo-1)] = new Cliente((siguienteCodigo+1000), nombre, telefono);
         }
         siguienteCodigo++;
     }
@@ -34,7 +34,7 @@ public class VectorClientes {
     public void mostrarClientes(){
         System.out.println("\n\n Clientes de memorabilia");
         for (int i = 0; i < (siguienteCodigo-1); i++) {
-            System.out.println("-"+i+") "+clientes[i].getInformacion());
+            System.out.println(""+i+") "+clientes[i].getInformacion());
             //System.out.println("-"+i+") "+clientes[i].getId() + " nombre "+clientes[i].getNombre()+ " telefono "+clientes[i].getTelefono());
             
         }
