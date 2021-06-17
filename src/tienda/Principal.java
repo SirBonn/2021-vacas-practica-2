@@ -53,10 +53,18 @@ public class Principal {
             if (menu == 5){
                 System.out.println("\n\n");
                 estantePeliculas.agregarPelicula();
+                System.out.println("\n\n\tNUEVA PELICULA\n\n");
                 estantePeliculas.mostrarPeliculas();
 
             }
-
+            if (menu == 6){
+                //mostrar clientes
+                System.out.println("Desordenado:");
+                estantePeliculas.mostrarPeliculas();
+                System.out.println("\n\nOrdenado:");
+                estantePeliculas.ordenarPorNombre(true);
+                estantePeliculas.mostrarPeliculas();
+            }
         }
 
     }

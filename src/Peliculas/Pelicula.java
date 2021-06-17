@@ -15,7 +15,6 @@ public class Pelicula {
      */
 
      public Pelicula(){
-
      }
 
      public Pelicula(String nombre, String categoria, int anio, int ID){
