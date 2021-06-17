@@ -6,21 +6,21 @@ public class Texto {
     public Texto(){
     }
 
-    public void nombreEmpresa(){
+    public static void nombreEmpresa(){
         System.out.println("\n\t _______  _______  _______  _______  ______  _______  ______  _______  ____     _______  _______ ");
         System.out.println("\t|   |   ||    ___||   |   ||       ||   __ \\|   _   ||   __ \\|_     _||    |__ |_     _||   _   |");
         System.out.println("\t|       ||    ___||       ||   -   ||      <|       ||   __ < _|   |_ |       | _|   |_ |       |");
         System.out.println("\t|__|_|__||_______||__|_|__||_______||___|__||___|___||______/|_______||_______||_______||___|___|");
     }
 
-    public void menuPrincipal(){
+    public static void menuPrincipal(){
         System.out.println("\n __ __  ___  _ _  _ _    ___  ___  _  _ _  ___  _  ___  ___  _   ");
         System.out.println("|  \\  \\| __|| \\ || | |  | . \\| . \\| || \\ ||  _|| || . \\| . || |  ");
         System.out.println("|     || _| |   || ' |  |  _/|   /| ||   || |__| ||  _/|   || |_ ");
         System.out.println("|_|_|_||___||_\\_|\\___/  |_|  |_\\_\\|_||_\\_|\\___/|_||_|  |_|_||___|\n");
     }
 
-    public void alquilar(){
+    public static void alquilar(){
         System.out.println("   _    _                _  _              ");
         System.out.println("  /_\\  | |  __ _  _   _ (_)| |  __ _  _ __ ");
         System.out.println(" //_\\\\ | | / _` || | | || || | / _` || '__|");
@@ -29,7 +29,7 @@ public class Texto {
         System.out.println("                    |_|                          \n");
     }
 
-    public void devolver(){
+    public static void devolver(){
         System.out.println("    ___                      _                    ");
         System.out.println("   /   \\  ___ __   __  ___  | |__   __  ___  _ __ ");
         System.out.println("  / /\\ / / _ \\\\ \\ / / / _ \\ | |\\ \\ / / / _ \\| '__|");
@@ -37,7 +37,7 @@ public class Texto {
         System.out.println("/___,'   \\___|  \\_/   \\___/ |_|  \\_/   \\___||_|   \n");
     }
 
-    public void clientes(){
+    public static void peliculas(){
         System.out.println("   ___        _  _               _             ");
         System.out.println("  / _ \\  ___ | |(_)  ___  _   _ | |  __ _  ___ ");
         System.out.println(" / /_)/ / _ \\| || | / __|| | | || | / _` |/ __|");
@@ -45,7 +45,7 @@ public class Texto {
         System.out.println("\\/      \\___||_||_| \\___| \\__,_||_| \\__,_||___/\n");
     }
 
-    public void peliculas(){
+    public static void clientes(){
         System.out.println("   ___  _  _               _              ");
         System.out.println("  / __\\| |(_)  ___  _ __  | |_   ___  ___ ");
         System.out.println(" / /   | || | / _ \\| '_ \\ | __| / _ \\/ __|");

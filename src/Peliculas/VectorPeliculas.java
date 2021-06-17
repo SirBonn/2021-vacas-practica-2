@@ -32,18 +32,29 @@ public class VectorPeliculas {
         }
     }
 
-    public void ordenarPorNombre(boolean ascendente){
+    public void ordenar(int tipo){
         boolean cambio = true;
 
         for (int i = 1; i < (ID-1); i++) {
             for (int j = 0; j < (ID-1-i); j++) {
                 //  String.compareTo(String)
                 //   [-oo , + oo]
-                if (ascendente)
+                if (tipo==0){
+                    //ordenara de forma ascendente
                     cambio= (peliculas[j].getNombre().compareTo(peliculas[j+1].getNombre()) > 0 );
-                else 
+                } if (tipo == 1){
+                    //ordenara de forma descendente
                     cambio= (peliculas[j].getNombre().compareTo(peliculas[j+1].getNombre()) < 0 );
-
+                } if (tipo==2){
+                    //ordenara por categorias
+                    cambio= (peliculas[j].getCategoria().compareTo(peliculas[j+1].getCategoria()) < 0 );
+                } if (tipo == 3){
+                    //ordenara por año de mayor a menor
+                    cambio= (peliculas[j].getAnio() > peliculas[j+1].getAnio());
+                } if (tipo == 4){
+                    //ordena por año de menor a mayor
+                    cambio= (peliculas[j].getAnio() < peliculas[j+1].getAnio());
+                }
                 if(cambio ){
                     //clientes i va antes que clientes j <0 descendente
                     Pelicula aux = peliculas[j];
