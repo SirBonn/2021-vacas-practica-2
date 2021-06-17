@@ -1,5 +1,6 @@
 package src.tienda;
 
+import src.Peliculas.VectorPeliculas;
 import src.clientes.VectorClientes;
 
 public class Principal {
@@ -8,6 +9,7 @@ public class Principal {
         Principal p = new Principal();
     }
 
+    private VectorPeliculas estantePeliculas = new VectorPeliculas();
     private VectorClientes tablaClientes = new VectorClientes();
 
     public Principal(){
@@ -47,6 +49,12 @@ public class Principal {
                 System.out.println("\n\nOrdenado:");
                 tablaClientes.ordenarPorNombre(false);
                 tablaClientes.mostrarClientes();
+            }
+            if (menu == 5){
+                System.out.println("\n\n");
+                estantePeliculas.agregarPelicula();
+                estantePeliculas.mostrarPeliculas();
+
             }
 
         }

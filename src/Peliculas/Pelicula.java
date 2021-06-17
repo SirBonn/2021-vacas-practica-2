@@ -18,10 +18,11 @@ public class Pelicula {
 
      }
 
-     public Pelicula(String nombre, String categoria, int anio){
+     public Pelicula(String nombre, String categoria, int anio, int ID){
          this.nombre = nombre;
          this.categoria = categoria;
          this.anio = anio;
+         this.ID = ID;
          this.disponible = true;
      }
 
@@ -76,7 +77,7 @@ public class Pelicula {
         } else{
             isDisponible = "Prestada";
         }
-        String datos = "ID" + ID +formato +"Nombre: " +nombre +formato +"Categoria: " +formato +"Año: " +anio +formato +"Estado: " +isDisponible;
+        String datos = "Nombre: " +nombre +formato +"Categoria: " +categoria +formato +"Año: " +anio +formato+"ID: " + ID +formato +"Estado: " +isDisponible+"\n\n";
         return datos;
       }
 }
